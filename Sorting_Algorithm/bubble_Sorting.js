@@ -9,15 +9,15 @@ const bubblesort =(array)=> {
 
     let newArray = array
     let j = array.length
-
     while(j > 1){
+        let swapped = false
         for(let i = 0 ; i <= j - 1 ; i++){
             if(newArray[i] > newArray[i+1]){
-                console.log(newArray, j, i)
                 newArray = swap(newArray, i, i+1)
-                console.log(newArray, j, i)
+                swapped = true
             }
         }
+        if(!swapped) break
         j--
     }
     return newArray
