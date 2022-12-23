@@ -163,7 +163,6 @@ class SinglyLinkedList {
         while(rightNode.next){
             rightNodeNext = rightNode.next
             middleNode.next = leftNode
-            console.log("middleNode:::", middleNode)
             leftNode = middleNode
             middleNode = rightNode
             rightNode = rightNodeNext
